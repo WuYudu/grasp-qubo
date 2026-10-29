@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "backend": "native",
+  "rasterEngine": "libreoffice",
+  "source": "saved",
+  "inputPath": "C:\\Users\\Administrator\\Desktop\\grasp-qubo-paper\\paper\\paper.docx",
+  "sourceSha256": "d2894625048398a95409fea9356ca02f5e77521e957b625b447a2a22cf39f130",
+  "dpi": 144,
+  "pageCount": 10,
+  "images": [
+    {
+      "index": 1,
+      "page": 8,
+      "path": "C:\\Users\\Administrator\\Desktop\\grasp-qubo-paper\\_render2\\page-0001.png",
+      "width": 1224,
+      "height": 1584,
+      "rectangle": {
+        "x": 0,
+        "y": 0,
+        "width": 816,
+        "height": 1056
+      },
+      "byteLength": 91757
+    }
+  ],
+  "missingFonts": [
+    "Courier"
+  ]
+}
