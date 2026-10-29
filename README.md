@@ -9,7 +9,7 @@
 
 ## 代码
 
-三个实验目录，前两个是论文 §6.1–6.3 的静态实验，第三个是 §6.4 的闭环实验。**不改动彼此的源文件**，后两个通过 `PYTHONPATH` 复用第一个的几何与求解器。
+三个实验目录，前两个是论文 §5.1–5.3 的静态实验，第三个是 §5.4 的闭环实验。**不改动彼此的源文件**，后两个通过 `PYTHONPATH` 复用第一个的几何与求解器。
 
 ```
 code/seq2d/src/       单个抓取选择 → 有序抓取 → 位姿联合优化
@@ -100,7 +100,3 @@ PYTHONPATH=code/seq2d/src python code/seq2d/src/demo.py
   note   = {Code and paper, https://github.com/<user>/grasp-qubo}
 }
 ```
-
-## 许可
-
-代码 MIT（见 `LICENSE`）；论文文本 CC BY 4.0。
