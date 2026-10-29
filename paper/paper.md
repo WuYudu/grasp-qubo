@@ -46,7 +46,7 @@ $$E(z)= -\sum_{o,c}\sum_{s<T} \mathrm{score}(o,c)z_{o,c,s} + \lambda\sum_o\Big(\
 
 **定理 1（单调性）** 设 $\lambda> \max_{o,c}\mathrm{score}(o,c)\cdot\max(1, T)$，则对任意满足 (a)(b)(c) 的 $z$，有 $E(z)=-\sum \mathrm{score}\cdot z$；且任何违反约束的 $z$ 的能量严格大于最优可行解的能量。
 
-*证明要点*：可行解上后三项全为 0；任一违反项增加至少 $\lambda$，而放弃或重排至多损失 $M\max\mathrm{score}$，取 $\lambda$ 足够大使违反不划算。∎
+*证明要点*：可行解上后三项全为 0；任一违反项增加至少 $\lambda$，而放弃或重排至多损失 $T\max\mathrm{score}$，取 $\lambda$ 足够大使违反不划算。∎
 
 实践中取 $\lambda=2T$，在全部验证用例中均满足定理条件。该性质带来两个工程好处：一是无需调参；二是**能量可直接读作负收益**，便于在不同求解器间比较解的质量。
 
@@ -100,8 +100,8 @@ $$E(z)= -\sum_{o,c}\sum_{s<T} \mathrm{score}(o,c)z_{o,c,s} + \lambda\sum_o\Big(\
 | N | 变量数 | 贪心差距 | MILP | 贪心 |
 |---|---|---|---|---|
 | 9 | 45 | 0.00% | 10.8 ms | 0.010 ms |
-| 21 | 231 | 0.49% | 210 ms | 0.045 ms |
-| 40 | 840 | 1.83% | 1 340 ms | 0.102 ms |
+| 21 | 231 | 0.49% | 48.7 ms | 0.023 ms |
+| 40 | 840 | 1.83% | 634 ms | 0.118 ms |
 | 60 | 1860 | 3.08% | 1 941 ms | 0.146 ms |
 
 若把窗口固定成 6 去跑 60 个物体，问题退化为"从 60 挑 6"，前置约束不再咬合、差距在 0–3% 间乱跳。**窗口与场景匹配**是这类实验的必要条件，否则测到的不是算法差异而是参数设置。
@@ -138,25 +138,25 @@ $$E(z)= -\sum_{o,c}\sum_{s<T} \mathrm{score}(o,c)z_{o,c,s} + \lambda\sum_o\Big(\
 
 [3] F. Glover, G. Kochenberger, Y. Du. Quantum Bridge Analytics I: a tutorial on formulating and using QUBO models. *4OR*, 17:335–371, 2019.
 
-[4] E. Rieffel, D. Venturelli, B. O'Gorman, et al. Quantum annealing for robotic task planning. *Quantum Information Processing*, 14(1):1–36, 2015.
+[4] E. G. Rieffel, D. Venturelli, B. O'Gorman, M. B. Do, E. Prystay, V. N. Smelyanskiy. A case study in programming a quantum annealer for hard operational planning problems. *Quantum Information Processing*, 14(1):1–36, 2015.
 
-[5] J. Li, S. Ghosh. Quantum annealing for non-maximum suppression. In *ECCV*, LNCS:158–173, 2020.
+[5] J. Li, S. Ghosh. Quantum-soft QUBO suppression for accurate object detection. In *ECCV*, LNCS:158–173, 2020.
 
-[6] T. Perion, et al. QUBO-based non-maximum suppression for object detection. In *IEEE QCE*, vol. 2:504–505, 2024.
+[6] J. C. G. Perion, et al. Performance analysis of QUBO-translated non-maximum suppression for object detection. In *IEEE QCE*, vol. 2:504–505, 2024.
 
-[7] N. Kuete Meli, et al. QuCOOP: a versatile framework for quantum combinatorial optimization. In *CVPR*:11395–11405, 2025.
+[7] N. Kuete Meli, V. Golyanik, M. Seelbach Benkner, M. Moeller. QuCOOP: a versatile framework for solving composite and binary-parametrised problems on quantum annealers. In *CVPR*:11395–11405, 2025.
 
-[8] M. Seelbach Benkner, et al. Q-Match: iterative shape matching for quantum computers. In *ICCV*:7586–7596, 2021.
+[8] M. Seelbach Benkner, Z. Lähner, V. Golyanik, C. Wunderlich, C. Theobalt, M. Moeller. Q-Match: iterative shape matching via quantum annealing. In *ICCV*:7586–7596, 2021.
 
-[9] S. Mücke, et al. Feature selection on quantum computers. *Quantum Machine Intelligence*, 5:11, 2023.
+[9] S. Mücke, R. Heese, S. Müller, M. Wolter, N. Piatkowski. Feature selection on quantum computers. *Quantum Machine Intelligence*, 5:11, 2023.
 
-[10] T. Felefly, et al. Quantum annealing for radiomics feature selection. *Journal of Digital Imaging*, 36(6):2335–2346, 2023.
+[10] T. Felefly, et al. An explainable MRI-radiomic quantum neural network to differentiate between large brain metastases and high-grade glioma using quantum annealing for feature selection. *Journal of Digital Imaging*, 36(6):2335–2346, 2023.
 
-[11] M. Leib, et al. A comparison of quantum and classical solvers for job scheduling. *Scientific Reports*, 13:18743, 2023.
+[11] D. Leib, T. Seidel, S. Jäger, R. Heese, et al. An optimization case study for solving a transport robot scheduling problem on quantum-hybrid and quantum-inspired hardware. *Scientific Reports*, 13:18743, 2023.
 
-[12] E. Salloum, et al. QUBO formulation for inverse kinematics with joint limits. *Scientific Reports*, 16:4244, 2025.
+[12] H. Salloum, S. Savin, Y. Kholodov, G. Ryzhakov, M. Farina, I. Oseledets. Quantum annealing for inverse kinematics in robotics. *Scientific Reports*, 16:4244, 2026. doi:10.1038/s41598-025-34346-z
 
-[13] M. Novara, et al. QUBO-based model predictive control. In *European Control Conference*, 2025.
+[13] C. Novara, M. Boggio, D. Volpe. Quantum optimization for nonlinear model predictive control. arXiv:2410.19467, 2024 (presented at European Control Conference, 2025).
 
 [14] D. Morrison, P. Corke, J. Leitner. Closing the loop for robotic grasping: a real-time, generative grasp synthesis approach (GG-CNN). In *RSS*, 2018.
 
