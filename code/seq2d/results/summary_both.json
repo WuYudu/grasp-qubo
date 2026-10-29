@@ -1,0 +1,30 @@
+{
+  "milp": {
+    "cases": 39,
+    "mean_gap_pct": 0.0,
+    "max_gap_pct": 0.0,
+    "mean_time_ms": 48.785,
+    "mean_infeasible_rate": 0.0
+  },
+  "greedy": {
+    "cases": 39,
+    "mean_gap_pct": 0.8252,
+    "max_gap_pct": 6.4644,
+    "mean_time_ms": 0.038,
+    "mean_infeasible_rate": 0.0
+  },
+  "sa": {
+    "cases": 39,
+    "mean_gap_pct": 2.1148,
+    "max_gap_pct": 9.6825,
+    "mean_time_ms": 115.318,
+    "mean_infeasible_rate": 0.016
+  },
+  "sqa": {
+    "cases": 39,
+    "mean_gap_pct": 3.99,
+    "max_gap_pct": 17.9089,
+    "mean_time_ms": 1471.732,
+    "mean_infeasible_rate": 0.0481
+  }
+}

@@ -1,0 +1,8 @@
+﻿numpy>=1.26
+pulp>=4.2
+highspy>=1.7
+dimod>=0.12
+dwave-samplers>=1.8
+Pillow>=10.0
+# optional, only for real hardware runs:
+# dwave-ocean-sdk>=7.0
