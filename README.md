@@ -97,6 +97,6 @@ PYTHONPATH=code/seq2d/src python code/seq2d/src/demo.py
   title  = {QUBO Modeling of Grasp Sequences: Monotone Encoding, Pose-Order Joint Optimization, and Closed-Loop Evaluation},
   author = {Wu, Yudu},
   year   = {2026},
-  note   = {Code and paper, https://github.com/<user>/grasp-qubo}
+  note   = {Code and paper, https://github.com/WuYudu/grasp-qubo}
 }
 ```
