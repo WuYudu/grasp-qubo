@@ -1,0 +1,22 @@
+﻿mode      seed   greedy  optimal    gap%
+value        0    4.392    4.392    0.0%
+value        1    4.358    3.967   -9.8%
+value        2    4.557    4.267   -6.8%
+value        3    4.631    4.365   -6.1%
+value        4    3.741    3.741    0.0%
+column       0    0.000    4.176  100.0%
+column       1    2.018    4.339   53.5%
+column       2    2.469    4.847   49.1%
+column       3    0.000    4.343  100.0%
+column       4    3.741    4.022    7.0%
+distance     0    0.000    0.000    0.0%
+distance     1    0.000    0.000    0.0%
+distance     2    0.000    0.000    0.0%
+distance     3    0.000    0.000    0.0%
+distance     4    0.000    0.000    0.0%
+--- risk (penalty=0.4, full clear) ---
+risk        0    6.868    7.268    5.5%
+risk        1    6.795    6.795    0.0%
+risk        2    7.331    7.731    5.2%
+risk        3    6.723    6.723    0.0%
+risk        4    6.585    6.585    0.0%
