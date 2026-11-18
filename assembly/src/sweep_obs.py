@@ -1,9 +1,6 @@
 """固定前缀 h=3，改观测成本，看风险策略还有没有活路。"""
 import csv
-import os
 import statistics
-
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 import backend
 import sim

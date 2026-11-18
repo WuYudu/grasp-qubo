@@ -1,8 +1,0 @@
-numpy
-dimod>=0.12
-dwave-samplers>=1.8
-pulp>=4.2
-highspy>=1.5
-pillow>=9.0
-# 真机路径需要（可选）
-# dwave-system>=1.26

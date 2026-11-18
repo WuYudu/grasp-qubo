@@ -1,9 +1,6 @@
 """细扫前缀长度，画 risk 与 safe 的交点。"""
 import csv
-import os
 import statistics
-
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 from PIL import Image, ImageDraw, ImageFont
 
